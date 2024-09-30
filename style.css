@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: gradientText 7s ease infinite; /* Анимация градиента для заголовка */
+}
+
+@keyframes gradientText {
+  0% { color: #ff4500; }
+  25% { color: #ff6347; }
+  50% { color: #ffa500; }
+  75% { color: #ffd700; }
+  100% { color: #ff4500; }
+}
+
+.section {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fafafa;
+  transition: background 0.3s;
+}
+
+.section:hover {
+  background: #e9ecef;
+}
+
+.description, .note, .help-text {
+  margin-bottom: 10px;
+}
+
+.description .highlight {
+  color: #ff4500; /* Выделение слова "крупная тима" */
+}
+
+.description .highlight-em {
+  color: #008080; /* Выделение слова "спонсоров" */
+}
+
+.note {
+  animation: textColorChange 5s ease infinite; /* Анимация для примечания */
+}
+
+@keyframes textColorChange {
+  0% { color: #34495e; }
+  50% { color: #2c3e50; }
+  100% { color: #34495e; }
+}
+
+.button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.button.secondary {
+  background-color: #28a745;
+}
+
+.button.secondary:hover {
+  background-color: #218838;
+}
+
+.manual-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: textAnimation 4s infinite alternate; /* Анимация для заголовка мануала */
+}
+
+@keyframes textAnimation {
+  0% { color: #007bff; }
+  50% { color: #17a2b8; }
+  100% { color: #007bff; }
+}
+
+.help-text {
+  margin-top: 15px; /* Отступ сверху */
+  font-size: 1em; /* Размер шрифта */
+  animation: fadeText 8s ease infinite; /* Анимация для текста помощи */
+}
+
+@keyframes fadeText {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
